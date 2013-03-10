@@ -29,7 +29,7 @@
 <br>
 <br>    
 
-<div id="left">
+<div class="left">
     <img src="teacher.jpg" id="prof" >
         
     <br>
