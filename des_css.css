@@ -14,18 +14,13 @@ header{
     font-weight: bold;
 }
 
-#left{
+.left{
     float:left;
     padding:30px;
-}
-
-#inner {
-    width: 30%;
-    margin: 0px auto;
     text-align: center;
 }
 
-#right{
+.right{
     padding: 30px;
 }
 
@@ -64,4 +59,7 @@ table{
     border-color: black;
 }
 
+#points{
+    font-size: 20px;
+}
 

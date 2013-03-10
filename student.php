@@ -50,13 +50,16 @@
 <br>
 <br>    
 
-<div id="left">
+<div class="left">
     <img src="student.png" id="prof" >
             
     <br>
     <br>
     
-    Points: 213
+    <b id="points">Points: 213</b>
+    
+    <br>
+    <br>
     
     <ul id="slider">
 	<li><img src="vector_badges/PNG/vector_badgesbadges_1.png"></li>
@@ -79,7 +82,7 @@
     </div>
 </div>
 
-<div id="right">
+<div class="right">
     <button>Lessons</button>
     <button></button>
     <button>Lesson work</button>
