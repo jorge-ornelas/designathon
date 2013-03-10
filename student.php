@@ -1,5 +1,17 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="AnythingSlider-master/css/anythingslider.css">
 <link rel="stylesheet" type="text/css" href="des_css.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="AnythingSlider-master/js/jquery.anythingslider.js"></script>
+
+<script>
+	// DOM Ready
+	$(function(){
+		$('#slider').anythingSlider();
+	});
+</script>
+
 <html>
 <head>
     <title>Designathon</title>
@@ -17,10 +29,19 @@
     <select id="class_chooser">
         <option>Change class:</option>
         <option>
-            Period 5: Algebra
+            Period 1: American History
         </option>
         <option>
-            Period 2: Trigonometry
+            Period 2: Biology
+        </option>
+	<option>
+            Period 3: Chemistry
+        </option>
+	<option>
+            Period 4: Physics A
+        </option>
+	<option>
+            Period 5: English 
         </option>
     </select>
     <button id="acc">Account Settings</button>
@@ -37,7 +58,25 @@
     
     Points: 213
     
+    <ul id="slider">
+	<li><img src="vector_badges/PNG/vector_badgesbadges_1.png"></li>
+	<li><img src="vector_badges/PNG/vector_badgesbadges_2.png"></li>
+	<li><img src="vector_badges/PNG/vector_badgesbadges_3.png"></li>
+	<li><img src="vector_badges/PNG/vector_badgesbadges_4.png"></li>
+	<li><img src="vector_badges/PNG/vector_badgesbadges_5.png"></li>
+    </ul>
     
+    <br>
+    <br>
+    <br>
+    
+    <div id="top_group">
+	Top Group: #5<br><br>
+	<img class="tg" src="student.png" >&nbsp;&nbsp;&nbsp;
+	<img class="tg" src="student.png" >&nbsp;&nbsp;&nbsp;
+	<img class="tg" src="student.png" >&nbsp;&nbsp;&nbsp;
+	<img class="tg" src="student.png" >
+    </div>
 </div>
 
 <div id="right">
