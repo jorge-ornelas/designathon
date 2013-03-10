@@ -76,7 +76,7 @@
     
     <br>
         
-    <table id="students">
+    <table border="1" id="students">
 	<tr id="heading">
 		<td>
 			Student Name
@@ -87,44 +87,133 @@
 		<td>
 			Class Average
 		</td>
-                <td>
-                        Quarter Average
-                </td>
-                <td>
-                        Year Average
-                </td>
+		<td>
+				Quarter Average
+		</td>
+		<td>
+				Year Average
+		</td>
 	</tr>
-    
-        <?php
-    
-        session_start();
-            $dbc = mysql_connect('sql.mit.edu', 'joor2992', 'mames475')
-                    or die('Error connecting to MySQL server.');
-    
-            mysql_select_db('joor2992+flipper', $dbc);
-    
-                    
-            $query="SELECT * FROM Students";
-            $result=mysql_query($query);
-            
-            $num=mysql_numrows($result);
-    
-            $i=0;
-            while ($i < $num) {
-                    
-                    $name=mysql_result($result,$i,"Name");
-                    $hw_avg=mysql_result($result,$i,"HW_Average");
-                    $class_avg=mysql_result($result,$i,"Class_Average");
-                    $quarter_avg=mysql_result($result,$i,"Quarter_Average");
-                    $year_avg=mysql_result($result,$i,"Year_Average");
-                    
-                    echo'<tr> <td> $name </td> <td> $hw_avg </td> <td> $class_avg </td> <td> $quarter_avg </td> <td> $year_avg </td> </tr>';
-                    
-                    $i++;
-            }
-            
-            mysql_close($dbc);
-        ?>
+	<tr>
+		<td>
+			Flippy Goodstudent
+		</td>
+		<td>
+			95
+		</td>
+		<td>
+			90
+		</td>
+		<td>
+			93
+		</td>
+		<td>
+			90
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Sammy Slowpace
+		</td>
+		<td>
+			70
+		</td>
+		<td>
+			65
+		</td>
+		<td>
+			66
+		</td>
+		<td>
+			70
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Irwin Improver
+		</td>
+		<td>
+			90
+		</td>
+		<td>
+			80
+		</td>
+		<td>
+			75
+		</td>
+		<td>
+			70
+		</td>
+	</tr>
+	<tr>
+		<td>
+			William Warning
+		</td>
+		<td>
+			70
+		</td>
+		<td>
+			75
+		</td>
+		<td>
+			84
+		</td>
+		<td>
+			86
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Eliza Expert
+		</td>
+		<td>
+			100
+		</td>
+		<td>
+			95
+		</td>
+		<td>
+			96
+		</td>
+		<td>
+			95
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Makayla Middleperson
+		</td>
+		<td>
+			80
+		</td>
+		<td>
+			85
+		</td>
+		<td>
+			83
+		</td>
+		<td>
+			80
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Liam LessBackground
+		</td>
+		<td>
+			79
+		</td>
+		<td>
+			81
+		</td>
+		<td>
+			86
+		</td>
+		<td>
+			87
+		</td>
+	</tr>
+	</table>
     
 </div>
 
